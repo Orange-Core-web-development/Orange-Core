@@ -1,18 +1,22 @@
-# Independent Website Projects
+# Flagship Website Projects
 
-Every directory in this folder represents a separate website, not a page within one giant website.
+Each numbered directory is an independent, multi-page website with its own identity, HTML pages, styles, scripts, assets and project README.
 
-Suggested naming convention:
+## Flagship sequence
 
-`001-descriptive-name/`, `002-descriptive-name/`, and so on.
+| Directory | Concept | Primary challenge |
+|---|---|---|
+| `001-apex-motors/` | Automotive showroom | Three.js, 3D product presentation, cinematic motion |
+| `002-velocity-supply/` | Cycling e-commerce | Product discovery, configurator and cart interactions |
+| `003-atelier-estates/` | Architecture/property | Spatial storytelling and interactive plans |
+| `004-noire/` | Restaurant/hospitality | Editorial art direction and menu experience |
+| `005-nexora/` | AI SaaS/dashboard | Product storytelling and data-rich UI |
+| `006-etherbound/` | Interactive 3D world | Real-time 3D and exploratory storytelling |
 
-Each project should own its:
+## Styling rule
 
-- HTML pages
-- CSS
-- JavaScript
-- Images, fonts and other assets
-- README describing the brief and implementation
-- `package.json` and lockfile only when npm dependencies are needed
+Do not force all pages into a universal template. Use shared styles only for foundations and genuinely reusable elements. Page-specific stylesheets and inline section styles are welcome when a page needs a different composition or visual identity.
 
-Do not add dependencies at the repository root just to make them available to every project. Check asset and library licences before using work in commercial demonstrations.
+## Dependencies and assets
+
+The repository root supplies optional shared packages. Import only what the project needs. Keep external asset source URLs, creators, exact licences and attribution requirements documented in each project's asset ledger. Check every individual model licence before download or commercial reuse.

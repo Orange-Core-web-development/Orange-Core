@@ -2,7 +2,11 @@
   "name": "orange-core",
   "version": "1.0.0",
   "private": true,
-  "description": "Shared root dependencies for Orange Core website projects",
+  "description": "Shared dependencies and tooling for Orange Core flagship website projects",
+  "scripts": {
+    "dev:apex": "vite projects/001-apex-motors --host 0.0.0.0",
+    "build:apex": "vite build projects/001-apex-motors"
+  },
   "dependencies": {
     "@rive-app/canvas": "latest",
     "animejs": "latest",
