@@ -1,155 +1,35 @@
 import * as THREE from "three";
+import { GLTFLoader } from "three/addons/loaders/GLTFLoader.js";
 
-export function mountVehicleScene(host) {
-  const scene = new THREE.Scene();
-  scene.fog = new THREE.Fog(0x090a0b, 10, 26);
+const MODEL_URL="https://files.innerscene.com/library/generic-mid-engine-supercar-73f252c5/b41b620d8a8890b1b70a/generic-mid-engine-supercar.glb";
 
-  const camera = new THREE.PerspectiveCamera(34, 1, 0.1, 100);
-  camera.position.set(7.5, 3.3, 9.5);
-
-  const renderer = new THREE.WebGLRenderer({ antialias: true, alpha: true, powerPreference: "low-power" });
-  renderer.setPixelRatio(Math.min(window.devicePixelRatio || 1, 1.65));
-  renderer.outputColorSpace = THREE.SRGBColorSpace;
-  renderer.toneMapping = THREE.ACESFilmicToneMapping;
-  renderer.toneMappingExposure = 1.15;
-  host.querySelector(".scene-loading")?.remove();
-  host.appendChild(renderer.domElement);
-
-  scene.add(new THREE.HemisphereLight(0xdce9ff, 0x24150f, 2.1));
-  const key = new THREE.DirectionalLight(0xffe1ca, 3.8);
-  key.position.set(4, 7, 5);
-  scene.add(key);
-  const rim = new THREE.PointLight(0xf05b2a, 34, 18);
-  rim.position.set(-5, 2, -3);
-  scene.add(rim);
-  const fill = new THREE.PointLight(0x8eb5d0, 18, 16);
-  fill.position.set(2, 1, 5);
-  scene.add(fill);
-
-  const floor = new THREE.Mesh(
-    new THREE.CircleGeometry(7, 64),
-    new THREE.MeshBasicMaterial({ color: 0x151311, transparent: true, opacity: 0.72 })
-  );
-  floor.rotation.x = -Math.PI / 2;
-  floor.position.y = -0.86;
-  scene.add(floor);
-
-  const car = new THREE.Group();
-  scene.add(car);
-  const paint = new THREE.MeshPhysicalMaterial({ color: 0xe85a2a, metalness: 0.78, roughness: 0.23, clearcoat: 1, clearcoatRoughness: 0.12 });
-  const dark = new THREE.MeshStandardMaterial({ color: 0x111315, metalness: 0.68, roughness: 0.34 });
-  const glass = new THREE.MeshPhysicalMaterial({ color: 0x17212a, metalness: 0.3, roughness: 0.12, transparent: true, opacity: 0.88 });
-  const rubber = new THREE.MeshStandardMaterial({ color: 0x08090a, roughness: 0.86 });
-  const alloy = new THREE.MeshStandardMaterial({ color: 0xa7a9a8, metalness: 0.92, roughness: 0.2 });
-  const glow = new THREE.MeshBasicMaterial({ color: 0xffd7c4 });
-
-  const body = new THREE.Mesh(new THREE.BoxGeometry(4.15, 0.48, 1.78), paint);
-  body.position.y = -0.16;
-  car.add(body);
-  const nose = new THREE.Mesh(new THREE.BoxGeometry(1.15, 0.25, 1.68), paint);
-  nose.position.set(1.68, -0.23, 0);
-  nose.rotation.z = -0.08;
-  car.add(nose);
-  const rear = new THREE.Mesh(new THREE.BoxGeometry(0.85, 0.32, 1.72), paint);
-  rear.position.set(-1.75, -0.08, 0);
-  car.add(rear);
-  const cabin = new THREE.Mesh(new THREE.BoxGeometry(1.9, 0.66, 1.38), glass);
-  cabin.position.set(-0.1, 0.34, 0);
-  cabin.rotation.z = -0.12;
-  car.add(cabin);
-  const roof = new THREE.Mesh(new THREE.BoxGeometry(1.18, 0.08, 1.34), dark);
-  roof.position.set(-0.18, 0.7, 0);
-  roof.rotation.z = -0.12;
-  car.add(roof);
-
-  for (const x of [-1.35, 1.35]) {
-    for (const z of [-0.91, 0.91]) {
-      const wheel = new THREE.Mesh(new THREE.CylinderGeometry(0.48, 0.48, 0.24, 32), rubber);
-      wheel.rotation.x = Math.PI / 2;
-      wheel.position.set(x, -0.46, z);
-      car.add(wheel);
-      const hub = new THREE.Mesh(new THREE.CylinderGeometry(0.24, 0.24, 0.255, 24), alloy);
-      hub.rotation.x = Math.PI / 2;
-      hub.position.set(x, -0.46, z * 1.015);
-      car.add(hub);
-      const center = new THREE.Mesh(new THREE.CylinderGeometry(0.075, 0.075, 0.27, 16), dark);
-      center.rotation.x = Math.PI / 2;
-      center.position.set(x, -0.46, z * 1.02);
-      car.add(center);
-    }
-  }
-
-  const frontLight = new THREE.Mesh(new THREE.BoxGeometry(0.16, 0.055, 1.12), glow);
-  frontLight.position.set(2.1, -0.1, 0);
-  car.add(frontLight);
-  const rearLight = new THREE.Mesh(new THREE.BoxGeometry(0.1, 0.045, 1.2), new THREE.MeshBasicMaterial({ color: 0xff3e27 }));
-  rearLight.position.set(-2.1, -0.04, 0);
-  car.add(rearLight);
-  const splitter = new THREE.Mesh(new THREE.BoxGeometry(0.45, 0.06, 1.85), dark);
-  splitter.position.set(2.13, -0.42, 0);
-  car.add(splitter);
-  const wing = new THREE.Mesh(new THREE.BoxGeometry(0.55, 0.07, 1.95), dark);
-  wing.position.set(-2.03, 0.3, 0);
-  car.add(wing);
-
-  car.rotation.y = -0.28;
-  car.scale.setScalar(host.clientWidth < 520 ? 0.82 : 1);
-  const pointer = { down: false, x: 0, rotation: -0.28 };
-  const onDown = (event) => { pointer.down = true; pointer.x = event.clientX; };
-  const onMove = (event) => {
-    if (!pointer.down) return;
-    pointer.rotation += (event.clientX - pointer.x) * 0.009;
-    pointer.x = event.clientX;
-  };
-  const onUp = () => { pointer.down = false; };
-  renderer.domElement.addEventListener("pointerdown", onDown);
-  window.addEventListener("pointermove", onMove);
-  window.addEventListener("pointerup", onUp);
-
-  const resize = () => {
-    const width = Math.max(host.clientWidth, 1);
-    const height = Math.max(host.clientHeight, 1);
-    camera.aspect = width / height;
-    camera.position.x = width < 520 ? 6.8 : 7.5;
-    camera.position.z = width < 520 ? 10.5 : 9.5;
-    camera.updateProjectionMatrix();
-    renderer.setSize(width, height, false);
-    car.scale.setScalar(width < 520 ? 0.76 : width < 850 ? 0.9 : 1);
-  };
-  const observer = new ResizeObserver(resize);
-  observer.observe(host);
-  resize();
-
-  const paintMaterial = paint;
-  window.addEventListener("apex:paint", (event) => paintMaterial.color.set(event.detail));
-
-  let frame = 0;
-  let animationId = 0;
-  const reduced = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
-  const render = () => {
-    animationId = requestAnimationFrame(render);
-    if (!pointer.down && !reduced) pointer.rotation += 0.0018;
-    car.rotation.y += (pointer.rotation - car.rotation.y) * 0.06;
-    if (!reduced) car.position.y = Math.sin(frame * 0.012) * 0.035;
-    frame += 1;
-    renderer.render(scene, camera);
-  };
-  render();
-
-  const visibility = new IntersectionObserver(([entry]) => {
-    if (entry.isIntersecting) {
-      if (!animationId) render();
-    } else {
-      cancelAnimationFrame(animationId);
-      animationId = 0;
-    }
-  }, { threshold: 0.05 });
-  visibility.observe(host);
-
-  window.addEventListener("pagehide", () => {
-    cancelAnimationFrame(animationId);
-    observer.disconnect();
-    visibility.disconnect();
-    renderer.dispose();
-  }, { once: true });
+export function mountVehicleScene(host){
+ const scene=new THREE.Scene();scene.fog=new THREE.Fog(0x090a0b,13,34);
+ const camera=new THREE.PerspectiveCamera(32,1,.1,100);camera.position.set(7.2,3,8.2);
+ const renderer=new THREE.WebGLRenderer({antialias:true,alpha:true,powerPreference:"high-performance"});
+ renderer.setPixelRatio(Math.min(devicePixelRatio||1,1.7));renderer.outputColorSpace=THREE.SRGBColorSpace;renderer.toneMapping=THREE.ACESFilmicToneMapping;renderer.toneMappingExposure=1.18;host.appendChild(renderer.domElement);
+ scene.add(new THREE.HemisphereLight(0xdce9ff,0x21120d,2.2));
+ const key=new THREE.DirectionalLight(0xffe3d2,4.2);key.position.set(4,8,5);scene.add(key);
+ const rim=new THREE.PointLight(0xf05b2a,38,24);rim.position.set(-5,2,-4);scene.add(rim);
+ const fill=new THREE.PointLight(0x8eb5d0,20,20);fill.position.set(3,1,7);scene.add(fill);
+ const floor=new THREE.Mesh(new THREE.CircleGeometry(8,80),new THREE.MeshBasicMaterial({color:0x171310,transparent:true,opacity:.8}));floor.rotation.x=-Math.PI/2;floor.position.y=-.04;scene.add(floor);
+ const grid=new THREE.GridHelper(24,48,0x44352d,0x292321);grid.position.y=-.035;grid.material.transparent=true;grid.material.opacity=.22;scene.add(grid);
+ const pivot=new THREE.Group();scene.add(pivot);let paintTargets=[];
+ const status=host.querySelector(".scene-loading");const loader=new GLTFLoader();
+ loader.load(MODEL_URL,(gltf)=>{
+  const model=gltf.scene;const bounds=new THREE.Box3().setFromObject(model);const size=bounds.getSize(new THREE.Vector3());const center=bounds.getCenter(new THREE.Vector3());model.position.sub(center);model.scale.setScalar(5.5/Math.max(size.x,size.y,size.z));
+  model.traverse(node=>{if(!node.isMesh)return;node.castShadow=true;node.receiveShadow=true;const mats=Array.isArray(node.material)?node.material:[node.material];mats.forEach(mat=>{const label=(mat.name+" "+node.name).toLowerCase();if(mat.color&&/(body|paint|car.?paint|exterior|shell)/.test(label)){const clone=mat.clone();clone.color.set("#e85a2a");clone.metalness=Math.max(clone.metalness??0,.48);clone.roughness=Math.min(clone.roughness??.5,.3);if(Array.isArray(node.material))node.material=node.material.map(m=>m===mat?clone:m);else node.material=clone;paintTargets.push(clone);}});});
+  pivot.add(model);if(!paintTargets.length){model.traverse(node=>{if(!node.isMesh)return;const mats=Array.isArray(node.material)?node.material:[node.material];mats.forEach(mat=>{if(mat.color&&mat.metalness!==undefined&&mat.roughness<.65){const clone=mat.clone();clone.color.lerp(new THREE.Color("#e85a2a"),.24);paintTargets.push(clone);if(Array.isArray(node.material))node.material=node.material.map(m=>m===mat?clone:m);else node.material=clone;}});});}
+  const b=new THREE.Box3().setFromObject(pivot);const s=b.getSize(new THREE.Vector3());const d=Math.max(s.x,s.z)*1.65;camera.position.set(d*.9,Math.max(s.y*2.6,2.4),d*1.12);camera.lookAt(0,0,0);
+  if(status)status.textContent="3D MODEL LOADED · DRAG TO ROTATE";
+ },e=>{if(status&&e.total)status.textContent="LOADING 3D MODEL · "+Math.round(e.loaded/e.total*100)+"%";},()=>{if(status)status.innerHTML='3D MODEL UNAVAILABLE · <a href="'+MODEL_URL+'" target="_blank" rel="noreferrer">OPEN SOURCE MODEL</a>';});
+ const pointer={down:false,x:0,rotation:-.28};renderer.domElement.addEventListener("pointerdown",e=>{pointer.down=true;pointer.x=e.clientX;renderer.domElement.setPointerCapture?.(e.pointerId);});
+ renderer.domElement.addEventListener("pointermove",e=>{if(!pointer.down)return;pointer.rotation+=(e.clientX-pointer.x)*.009;pointer.x=e.clientX;});
+ const release=()=>pointer.down=false;renderer.domElement.addEventListener("pointerup",release);renderer.domElement.addEventListener("pointercancel",release);
+ const resize=()=>{const w=Math.max(host.clientWidth,1),h=Math.max(host.clientHeight,1);camera.aspect=w/h;camera.updateProjectionMatrix();renderer.setSize(w,h,false);};const observer=new ResizeObserver(resize);observer.observe(host);resize();
+ const paint=e=>paintTargets.forEach(m=>m.color.set(e.detail));window.addEventListener("apex:paint",paint);
+ let raf=0,frame=0;const reduced=matchMedia("(prefers-reduced-motion: reduce)").matches;
+ const visibility=new IntersectionObserver(([entry])=>{if(entry.isIntersecting&&!raf)animate();else if(!entry.isIntersecting){cancelAnimationFrame(raf);raf=0;}},{threshold:.02});
+ function animate(){raf=requestAnimationFrame(animate);if(!pointer.down&&!reduced)pointer.rotation+=.0015;pivot.rotation.y+=(pointer.rotation-pivot.rotation.y)*.055;if(!reduced)pivot.position.y=Math.sin(frame*.012)*.025;frame++;renderer.render(scene,camera);}
+ visibility.observe(host);window.addEventListener("pagehide",()=>{cancelAnimationFrame(raf);observer.disconnect();visibility.disconnect();window.removeEventListener("apex:paint",paint);renderer.dispose();},{once:true});
 }

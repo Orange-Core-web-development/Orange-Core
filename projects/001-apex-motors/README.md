@@ -1,51 +1,26 @@
 # 001 — APEX MOTORS
 
-A fictional premium performance-automotive brand and interactive showroom. This is a portfolio concept, not a real manufacturer or vehicle.
+A fictional premium performance-automotive marque and interactive digital showroom. The vehicle, brand and performance data are concept content, not a real manufacturer or production vehicle.
 
-## Experience goals
+## Experience scope
+APEX is intended to feel like a complete automotive brand platform, not a short landing page. The first milestone establishes brand identity, 3D showroom and deeper product storytelling. Further passes can add more models, journal, configurator options and responsive interaction polish.
 
-- Cinematic editorial homepage with a distinctive motorsport identity.
-- Interactive Three.js concept vehicle with pointer rotation.
-- Vehicle detail/configurator page with live paint selection.
-- Responsive layouts and reduced-motion support.
-- Real multi-page navigation rather than a single-page landing page.
+## Current pages
+- `index.html` — brand introduction, philosophy, engineering mindset, design language and concept specifications.
+- `vehicle.html` — A-01 model detail, live 3D viewer, paint selection, exterior design breakdown, cockpit concept, engineering notes and fictional technical data.
 
-## Pages
-
-- `index.html` — brand introduction, philosophy, design feature and concept specifications.
-- `vehicle.html` — interactive A-01 concept presentation, colour controls and fictional technical data.
+## 3D model
+The viewer loads an unbranded CC0 generic mid-engine supercar GLB from Innerscene through Three.js GLTFLoader. Source, direct file and licence are recorded in `assets/models/ASSET-REGISTER.md`. The viewer displays loading progress and a source-file fallback if the external host is unavailable.
 
 ## Stack
+Semantic HTML, project-specific CSS and vanilla JavaScript; Three.js + GLTFLoader; GSAP entrance motion; Lenis desktop smooth scrolling with reduced-motion and small-screen guardrails; Vite.
 
-- Semantic HTML, CSS and vanilla JavaScript.
-- Three.js for the interactive 3D concept vehicle.
-- GSAP for entrance motion.
-- Lenis for desktop smooth scrolling, disabled for reduced-motion and small-screen contexts.
-- Vite for local development and production bundling.
-
-## Styling architecture
-
-- `css/site.css` contains the shared APEX design system and responsive foundations.
-- Future pages may add page-specific stylesheets.
-- Inline CSS is welcome for isolated art-directed sections; avoid forcing unique compositions into generic shared classes.
-
-## 3D asset strategy
-
-The initial A-01 is a procedural Three.js study built from geometry primitives, so the experience works without an external model download. It is a temporary original placeholder, not a finished production vehicle model.
-
-Before replacing it with a downloadable model:
-- Prefer GLB/glTF.
-- Check the exact model's licence and creator page.
-- Record attribution and licence evidence in `assets/models/ASSET-REGISTER.md`.
-- Optimise geometry and textures, test mobile performance, and retain a static fallback.
+## Styling
+Keep APEX independent. Shared foundations live in `css/site.css`; page-specific stylesheets are welcome. Inline CSS is encouraged for genuinely bespoke editorial sections.
 
 ## Run
-
-From the repository root:
-
 ```bash
 npm run dev:apex
 npm run build:apex
 ```
-
-All vehicle specifications are fictional demonstration data.
+All specifications and performance figures are fictional concept data.

@@ -1,23 +1,22 @@
 # APEX MOTORS — 3D model and asset register
 
-No third-party 3D model is bundled in this first implementation. The current A-01 is procedural Three.js geometry.
+## Primary vehicle model
 
-## Candidate open model libraries
+**Generic mid-engine supercar**
+- Creator/source: Innerscene original model
+- Format: GLB · published size 3.8 MB
+- Licence: CC0 / public domain dedication
+- Commercial use, modification and redistribution: permitted under CC0
+- Attribution: not required; provenance retained here
+- Source/model page: https://www.innerscene.com/tools/library/3d-parts/generic-mid-engine-supercar-73f252c5
+- Direct GLB endpoint: https://files.innerscene.com/library/generic-mid-engine-supercar-73f252c5/b41b620d8a8890b1b70a/generic-mid-engine-supercar.glb
 
-These are discovery sources, not blanket permission to use every model on the site. Check the licence on the individual asset page and preserve the exact licence file/attribution with each downloaded model.
+The model page describes this as an unbranded mid-engine supercar and explicitly states CC0. The Three.js viewer loads it through GLTFLoader. It is externally hosted, so availability and CORS policy remain dependencies. If external loading fails, vendor a local copy after rechecking the source terms and point MODEL_URL to the local GLB.
 
-| Source | Useful for | Licence handling | URL |
-|---|---|---|---|
-| Poly Haven | Realistic props, environments, HDRIs and materials | Assets are published as CC0; retain source record | https://polyhaven.com/ |
-| 3D Valley | Searchable CC0 GLB catalogue including transport and buildings | Confirm the original source and CC0 record for the chosen asset | https://3dvalley.com/3d-models |
-| Renderlyst | Curated GLB models including vehicles and fantasy props | Listed assets include CC BY 4.0 and CC0; credit CC BY creators | https://renderlyst.site/models |
-| Sketchfab | Specific vehicles, interiors and hard-surface models | Per-model licence; avoid NC assets for commercial work | https://sketchfab.com/ |
+## Additional discovery sources
+- Poly Haven — CC0 HDRIs, materials and props: https://polyhaven.com/
+- Renderlyst — individual models marked CC0 or CC BY 4.0; retain attribution for CC BY: https://renderlyst.site/models
+- Kenney Car Kit — CC0 low-poly vehicle pack: https://kenney.nl/assets/car-kit
 
-## Planned model requirements
-
-- Format: GLB/glTF 2.0.
-- Prefer low/medium polycount with clean topology and baked/optimised textures.
-- Keep initial download size small; use compressed textures where supported.
-- Record creator, exact asset page, licence name/version, attribution text, download date and local filename.
-- Do not bundle a model until its individual rights are verified.
-- For a branded real-world car, check trademark/design/IP concerns as well as the model licence.
+## Asset handling
+Record the exact source page, creator, licence and date for each asset. Prefer GLB/glTF, compressed textures and reasonable triangle counts. Check CORS and mobile loading for externally hosted assets. For client work, retain a local copy plus licence/attribution file whenever permitted.
