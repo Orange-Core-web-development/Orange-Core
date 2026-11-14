@@ -16,5 +16,8 @@
     "photoswipe": "latest",
     "swiper": "latest",
     "three": "latest"
+  },
+  "devDependencies": {
+    "vite": "^8.3.8"
   }
 }
