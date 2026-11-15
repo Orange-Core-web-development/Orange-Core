@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 920 760" role="img" aria-labelledby="title desc">
+  <title id="title">Spoke &amp; Signal mobile bicycle workshop illustration</title>
+  <desc id="desc">A warm editorial illustration of a dark blue road bicycle with orange details, set against abstract workshop shapes.</desc>
+  <defs>
+    <linearGradient id="ground" x1="0" x2="1" y1="0" y2="1"><stop stop-color="#d8e8df"/><stop offset="1" stop-color="#b7d9e0"/></linearGradient>
+    <linearGradient id="frame" x1="0" x2="1"><stop stop-color="#1d3038"/><stop offset=".55" stop-color="#315c65"/><stop offset="1" stop-color="#17252d"/></linearGradient>
+    <filter id="shadow" x="-30%" y="-30%" width="160%" height="160%"><feGaussianBlur stdDeviation="15"/></filter>
+  </defs>
+  <path d="M130 104c92-74 223-68 312-22 86 44 112 13 200-6 99-22 183 36 190 128 7 91-42 127-16 220 24 87-31 178-128 193-92 14-157-41-260-8-95 30-199 13-249-59-49-70-117-77-143-164-26-87 14-226 94-282Z" fill="url(#ground)"/>
+  <circle cx="690" cy="170" r="95" fill="#d9f36a" opacity=".85"/>
+  <circle cx="690" cy="170" r="63" fill="none" stroke="#17252d" stroke-width="2" stroke-dasharray="4 10" opacity=".35"/>
+  <path d="M85 594c165-60 274-43 410-18 134 24 244 16 354-27" fill="none" stroke="#1f6571" stroke-width="2" stroke-dasharray="3 13" opacity=".4"/>
+  <ellipse cx="465" cy="633" rx="335" ry="33" fill="#17252d" opacity=".18" filter="url(#shadow)"/>
+  <g transform="translate(45 6)">
+    <circle cx="250" cy="490" r="154" fill="none" stroke="#17252d" stroke-width="12"/>
+    <circle cx="250" cy="490" r="142" fill="none" stroke="#f5f1e8" stroke-width="3"/>
+    <circle cx="250" cy="490" r="8" fill="#ff6b3d" stroke="#17252d" stroke-width="3"/>
+    <circle cx="690" cy="490" r="154" fill="none" stroke="#17252d" stroke-width="12"/>
+    <circle cx="690" cy="490" r="142" fill="none" stroke="#f5f1e8" stroke-width="3"/>
+    <circle cx="690" cy="490" r="8" fill="#ff6b3d" stroke="#17252d" stroke-width="3"/>
+    <g stroke="#f5f1e8" stroke-width="2" opacity=".8">
+      <path d="M250 336v308M96 490h308M141 381l218 218M141 599l218-218"/>
+      <path d="M690 336v308M536 490h308M581 381l218 218M581 599l218-218"/>
+    </g>
+    <path d="M250 490 408 300 522 490 250 490 350 490 408 300 690 490 522 490 610 295" fill="none" stroke="url(#frame)" stroke-width="18" stroke-linejoin="round" stroke-linecap="round"/>
+    <path d="M408 300 438 279 474 279" stroke="#17252d" stroke-width="15" stroke-linecap="round"/>
+    <path d="M610 295 642 274 681 278" stroke="#17252d" stroke-width="14" stroke-linecap="round"/>
+    <path d="M522 490 537 530 566 530" stroke="#17252d" stroke-width="13" stroke-linecap="round"/>
+    <path d="M350 490 331 527 298 527" stroke="#17252d" stroke-width="13" stroke-linecap="round"/>
+    <path d="M408 300 395 270 421 266" stroke="#ff6b3d" stroke-width="10" stroke-linecap="round"/>
+    <path d="M610 295 600 260 621 253" stroke="#ff6b3d" stroke-width="10" stroke-linecap="round"/>
+    <path d="M590 263c18-23 48-25 68-9l14 11" fill="none" stroke="#17252d" stroke-width="12" stroke-linecap="round"/>
+    <path d="M380 266c-20-9-39-7-54 3l-12 8" fill="none" stroke="#17252d" stroke-width="13" stroke-linecap="round"/>
+    <circle cx="522" cy="490" r="31" fill="#17252d" stroke="#ff6b3d" stroke-width="6"/>
+    <circle cx="522" cy="490" r="8" fill="#f5f1e8"/>
+    <path d="M522 490 559 514 565 506" stroke="#ff6b3d" stroke-width="8" stroke-linecap="round" fill="none"/>
+    <path d="M522 490 489 462" stroke="#ff6b3d" stroke-width="8" stroke-linecap="round"/>
+    <path d="M396 298 379 322" stroke="#ff6b3d" stroke-width="7" stroke-linecap="round"/>
+    <path d="M604 293 584 321" stroke="#ff6b3d" stroke-width="7" stroke-linecap="round"/>
+    <path d="M230 490c-8-38 2-69 24-92" stroke="#ff6b3d" stroke-width="4" fill="none" stroke-linecap="round"/>
+    <path d="M671 490c-5-42 8-73 33-94" stroke="#ff6b3d" stroke-width="4" fill="none" stroke-linecap="round"/>
+  </g>
+  <g transform="translate(95 88)">
+    <rect x="5" y="5" width="120" height="76" rx="14" fill="#17252d"/>
+    <path d="M28 30h74M28 46h52" stroke="#d9f36a" stroke-width="5" stroke-linecap="round"/>
+    <circle cx="100" cy="66" r="7" fill="#ff6b3d"/>
+  </g>
+  <g transform="translate(710 555) rotate(-12)">
+    <rect width="122" height="62" rx="12" fill="#ff6b3d" stroke="#17252d" stroke-width="2"/>
+    <path d="M20 19h80M20 33h48" stroke="#17252d" stroke-width="4" stroke-linecap="round"/>
+    <text x="20" y="51" font-family="Arial,sans-serif" font-size="8" font-weight="900" fill="#17252d" letter-spacing="1.5">FIELD KIT</text>
+  </g>
+  <path d="M160 196l-24-25m24 25 25-25M774 310l-24-25m24 25 25-25" fill="none" stroke="#1f6571" stroke-width="5" stroke-linecap="round"/>
+  <circle cx="156" cy="196" r="5" fill="#ff6b3d"/><circle cx="774" cy="310" r="5" fill="#ff6b3d"/>
+</svg>
