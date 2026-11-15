@@ -1,8 +1,8 @@
-# Independent Website Projects
+# Flagship Website Projects
 
-Every directory in this folder represents a separate website, not a page within one giant website.
+Each numbered directory is an independent, multi-page website with its own identity, HTML pages, styles, scripts, assets and project README.
 
-Suggested naming convention:
+## Flagship sequence
 
 \`001-descriptive-name/\`, \`002-descriptive-name/\`, and so on.
 
