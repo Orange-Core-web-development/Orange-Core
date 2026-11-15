@@ -1,4 +1,5 @@
 (() => {
+  document.documentElement.classList.add('has-js');
   const menuButton = document.querySelector('.menu-toggle');
   const navigation = document.querySelector('.primary-nav');
 
