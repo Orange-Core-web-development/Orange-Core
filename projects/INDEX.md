@@ -5,6 +5,7 @@ A growing catalogue of independent, fictional-business website concepts. Every p
 | Day | Project | Niche | Concept |
 |---|---|---|---|
 | 01 | [Spoke & Signal](./001-spoke-signal/) | Mobile bicycle servicing | A design-led mobile workshop serving Bristol and nearby areas |
+| 02 | [Fieldnote Roasters](./002-fieldnote-coffee/) | Specialty coffee roasting and wholesale | A Cape Town micro-roastery with a retail catalogue, brew journal and trade desk |
 
 New projects are added here as they are completed. Each project contains its own research report, brief, multi-page static site, implementation notes and QA checklist.
 

@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 900" role="img" aria-labelledby="title desc">
+<title id="title">Fieldnote coffee bag illustration</title><desc id="desc">A cream and orange coffee pouch with a botanical coffee branch drawing and Fieldnote lettering.</desc>
+<defs>
+<linearGradient id="bag" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#fffaf0"/><stop offset="1" stop-color="#e7ddcb"/></linearGradient>
+<linearGradient id="label" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#f1845e"/><stop offset="1" stop-color="#e65e3a"/></linearGradient>
+<filter id="shadow" x="-30%" y="-30%" width="160%" height="170%"><feGaussianBlur stdDeviation="18"/></filter>
+</defs>
+<ellipse cx="393" cy="820" rx="205" ry="35" fill="#3c2c21" opacity=".18" filter="url(#shadow)"/>
+<path d="M205 85 558 85 590 160 615 765 150 765 176 160Z" fill="url(#bag)" stroke="#bdb19e" stroke-width="3"/>
+<path d="M205 85 558 85 578 139 186 139Z" fill="#d8cbb8"/>
+<path d="M193 156 574 156 600 735 165 735Z" fill="none" stroke="#c8bba8" stroke-width="2"/>
+<path d="M223 192h322v450H223z" fill="url(#label)"/>
+<path d="M244 216h280v1H244zM244 616h280v1H244z" fill="#fff" opacity=".5"/>
+<text x="260" y="252" fill="#2b211b" font-family="Arial,sans-serif" font-size="19" font-weight="700" letter-spacing="7">FIELDNOTE</text>
+<text x="260" y="344" fill="#2b211b" font-family="Georgia,serif" font-size="70" font-weight="bold" letter-spacing="-5">HOUSE</text>
+<text x="260" y="414" fill="#2b211b" font-family="Georgia,serif" font-size="70" font-weight="bold" letter-spacing="-5">NO. 04</text>
+<text x="262" y="457" fill="#2b211b" font-family="Arial,sans-serif" font-size="16" font-weight="700" letter-spacing="4">BRAZIL × COLOMBIA</text>
+<g fill="none" stroke="#2b211b" stroke-width="3" opacity=".7">
+<path d="M387 493c-22 33-32 62-28 92M387 494c-30-22-53-26-78-19M385 514c29-27 57-33 85-26M372 542c-29-5-49 1-68 19M388 543c27-5 47 1 66 19"/>
+<path d="M310 474c-15-24-13-43 4-57 24 5 35 24 26 48-11 11-20 13-30 9zM470 489c16-25 14-45-4-58-24 6-34 25-24 49 11 10 20 12 28 9zM304 567c-19-17-39-19-57-6 0 23 15 39 38 38 14-8 20-18 19-32zM450 574c20-18 40-19 57-6 0 23-15 39-38 38-14-8-20-18-19-32z"/>
+<circle cx="387" cy="596" r="13"/><circle cx="365" cy="577" r="7"/><circle cx="410" cy="574" r="7"/>
+</g>
+<text x="260" y="683" fill="#2b211b" font-family="Arial,sans-serif" font-size="16" font-weight="700" letter-spacing="3">ROASTED WITH INTENTION</text>
+<text x="260" y="709" fill="#2b211b" font-family="Arial,sans-serif" font-size="13" letter-spacing="2">250 G · WHOLE BEAN</text>
+<path d="M178 160h398M185 171h384" stroke="#c3b5a1" stroke-width="2"/>
+<circle cx="550" cy="180" r="27" fill="#4358d8"/><text x="550" y="188" fill="#fff" text-anchor="middle" font-family="Georgia,serif" font-size="24">fn.</text>
+</svg>
