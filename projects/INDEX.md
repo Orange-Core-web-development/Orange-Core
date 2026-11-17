@@ -6,6 +6,7 @@ A growing catalogue of independent, fictional-business website concepts. Every p
 |---|---|---|---|
 | 01 | [Spoke & Signal](./001-spoke-signal/) | Mobile bicycle servicing | A design-led mobile workshop serving Bristol and nearby areas |
 | 02 | [Fieldnote Roasters](./002-fieldnote-coffee/) | Specialty coffee roasting and wholesale | A Cape Town micro-roastery with a retail catalogue, brew journal and trade desk |
+| 03 | [Kitewire Solar & Storage](./003-kitewire-solar/) | Solar PV, battery storage and installation services | A Lusaka-focused energy planning concept with service pathways, a load planner and project brief builder |
 
 New projects are added here as they are completed. Each project contains its own research report, brief, multi-page static site, implementation notes and QA checklist.
 
