@@ -1,21 +1,22 @@
 # Orange Core — 30 websites in 30 days
 
-A growing catalogue of independent, fictional-business website concepts. Every project is a portfolio demonstration, not a real trading business. Business names, contact details, locations where specified, prices, reviews and customer stories are illustrative unless a source is explicitly cited in that project's research report.
+A growing catalogue of independent fictional-business website concepts. Every project is a portfolio demonstration, not a real trading business. Names, contacts, prices, reviews and stories are illustrative unless a source is explicitly cited.
 
 | Day | Project | Niche | Concept |
 |---|---|---|---|
-| 01 | [Spoke & Signal](./001-spoke-signal/) | Mobile bicycle servicing | A design-led mobile workshop serving Bristol and nearby areas |
-| 02 | [Fieldnote Roasters](./002-fieldnote-coffee/) | Specialty coffee roasting and wholesale | A Cape Town micro-roastery with a retail catalogue, brew journal and trade desk |
-| 03 | [Kitewire Solar & Storage](./003-kitewire-solar/) | Solar PV, battery storage and installation services | A Lusaka-focused energy planning concept with service pathways, a load planner and project brief builder |\n| 04 | [MOSS / LINE Garden Studio](./004-mossline-garden/) | Landscape design, garden installation and seasonal care | A Lusaka garden studio concept with service pathways, a planting-role library, seasonal guide and project brief builder |
+| 01 | [Spoke & Signal](./001-spoke-signal/) | Mobile bicycle servicing | Design-led mobile workshop serving Bristol and nearby areas |
+| 02 | [Fieldnote Roasters](./002-fieldnote-coffee/) | Specialty coffee roasting and wholesale | Cape Town micro-roastery with retail catalogue, brew journal and trade desk |
+| 03 | [Kitewire Solar & Storage](./003-kitewire-solar/) | Solar PV, battery storage and installation | Lusaka energy-planning concept with load planner and project brief builder |
+| 04 | [MOSS / LINE Garden Studio](./004-mossline-garden/) | Landscape design, installation and seasonal care | Lusaka garden studio with planting-role library and brief builder |
+| 05 | [Luma Trails](./005-luma-trails/) | Boutique safari and experiential travel | Livingstone travel concept with experience cards, itineraries, field guide and trip-brief builder |
 
-New projects are added here as they are completed. Each project contains its own research report, brief, multi-page static site, implementation notes and QA checklist.
+New projects are added here. Each includes research, fictional business brief, multi-page static website, implementation notes and QA checklist.
 
 ## Challenge rules
-
-- One substantial website per day; 30 projects total.
-- Research the niche before writing the fictional business brief.
+- One substantial website per day; 30 total.
+- Research before the fictional brief.
 - Prefer plain HTML, CSS and vanilla JavaScript.
-- Keep each website independently deployable on GitHub Pages.
-- Prefer native browser capabilities before adding a dependency.
-- Use only assets with clear reuse rights; record licences and attribution.
-- Clearly label fictional details and illustrative testimonials.
+- Each website is independently deployable on GitHub Pages.
+- Prefer native browser capabilities before adding dependencies.
+- Use assets with clear reuse rights; document licences and attribution.
+- Clearly label fictional details and testimonials.
