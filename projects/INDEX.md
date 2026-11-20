@@ -9,6 +9,7 @@ A growing catalogue of independent fictional-business website concepts. Every pr
 | 03 | [Kitewire Solar & Storage](./003-kitewire-solar/) | Solar PV, battery storage and installation | Lusaka energy-planning concept with load planner and project brief builder |
 | 04 | [MOSS / LINE Garden Studio](./004-mossline-garden/) | Landscape design, installation and seasonal care | Lusaka garden studio with planting-role library and brief builder |
 | 05 | [Luma Trails](./005-luma-trails/) | Boutique safari and experiential travel | Livingstone travel concept with experience cards, itineraries, field guide and trip-brief builder |
+| 06 | [COMMON FORM Clay Studio](./006-common-form-studio/) | Ceramics studio, classes and community | Lusaka clay club with workshop filters, studio-credit calculator and booking brief |
 
 New projects are added here. Each includes research, fictional business brief, multi-page static website, implementation notes and QA checklist.
 
