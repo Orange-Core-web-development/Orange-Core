@@ -10,6 +10,7 @@ A growing catalogue of independent fictional-business website concepts. Every pr
 | 04 | [MOSS / LINE Garden Studio](./004-mossline-garden/) | Landscape design, installation and seasonal care | Lusaka garden studio with planting-role library and brief builder |
 | 05 | [Luma Trails](./005-luma-trails/) | Boutique safari and experiential travel | Livingstone travel concept with experience cards, itineraries, field guide and trip-brief builder |
 | 06 | [COMMON FORM Clay Studio](./006-common-form-studio/) | Ceramics studio, classes and community | Lusaka clay club with workshop filters, studio-credit calculator and booking brief |
+| 07 | [STILLWOOD Furniture Atelier](./007-stillwood-atelier/) | Furniture restoration and bespoke woodworking | Lusaka craft atelier with service filters, project gallery and enquiry brief builder |
 
 New projects are added here. Each includes research, fictional business brief, multi-page static website, implementation notes and QA checklist.
 
