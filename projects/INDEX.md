@@ -12,6 +12,7 @@ A growing catalogue of independent fictional-business website concepts. Every pr
 | 06 | [COMMON FORM Clay Studio](./006-common-form-studio/) | Ceramics studio, classes and community | Lusaka clay club with workshop filters, studio-credit calculator and booking brief |
 | 07 | [STILLWOOD Furniture Atelier](./007-stillwood-atelier/) | Furniture restoration and bespoke woodworking | Lusaka craft atelier with service filters, project gallery and enquiry brief builder |
 | 08 | [PAWLINE Veterinary Studio](./008-pawline-clinic/) | Companion-animal veterinary care | Lusaka clinic concept with care filters, new-patient checklist and enquiry builder |
+| 09 | [DAYFRAME Work Club](./009-dayframe-workclub/) | Flexible workspace and coworking | Lusaka work club with space filters, membership estimator, community calendar and visit-brief builder |
 
 New projects are added here. Each includes research, fictional business brief, multi-page static website, implementation notes and QA checklist.
 
