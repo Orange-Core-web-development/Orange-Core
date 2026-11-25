@@ -8,7 +8,7 @@
 ## 1. Niche overview
 The niche is a specialist, project-based service rather than a simple equipment shop. A customer is buying a water source and a working system: site investigation, drilling, casing, development, pumping tests, pump selection, power, storage, distribution and documentation. A useful website should explain how these parts fit together and be honest about what cannot be promised before the ground is investigated.
 
-Zambian groundwater work has a specific regulatory context. WARMA publishes requirements for drilling-company licensing and borehole registration. Its published guidance lists company and technical credentials, drilling equipment and pump-test equipment for drilling-company licence applications. Its borehole-registration guidance describes landowner consent and site information requirements; for domestic sites it asks for a sketch/site map covering a 30 m radius and showing boundaries, roads and distances from sanitation or other potential pollution sources. For non-domestic sites it lists a site-investigation report with planned location, existing boreholes within 250 m, pollution sources, proposed depth and casing diameter.
+Zambian groundwater work has a specific regulatory context. WARMA publishes requirements for drilling-company licensing and borehole registration. Its published guidance lists company and technical credentials, drilling equipment and pump-test equipment for drilling-company licence applications. WARMA’s first-quarter 2025 newsletter states that only licensed drilling companies are permitted to conduct drilling activities and publishes a 2025 registered-company list; that dated list should not be treated as the current register. Its borehole-registration guidance describes landowner consent and site information requirements; for domestic sites it asks for a sketch/site map covering a 30 m radius and showing boundaries, roads and distances from sanitation or other potential pollution sources. For non-domestic sites it lists a site-investigation report with planned location, existing boreholes within 250 m, pollution sources, proposed depth and casing diameter.
 
 WARMA's My-WARMA portal describes water permits for abstraction above 10,000 litres/day for domestic purposes and above 20,000 litres/day for agricultural purposes. Users should verify current rules and their specific circumstances with WARMA; the website must not give legal advice or imply every domestic borehole has the same permit requirements.
 
@@ -91,6 +91,9 @@ Reference: https://www.rubydrillinglimited.com/
 Its public site promotes geophysical surveys, borehole drilling, pump installation and overhead tank construction. It is another reference for the survey-to-water-system structure.  
 Reference: https://www.zambharat.com/
 
+### Additional Lusaka market observations
+A Lusaka business search surfaced Victoria Drilling and Exploration, Ruby Drilling, Karibu Boreholes and Constructions, STS Drilling and Exploration, and other well/drilling contractors. Quanta Horizon appears in the adjacent groundwater and water-resource consultancy lane. Pump and irrigation suppliers such as Melvel, Finecop and Davis & Shirtliff occupy the equipment/installation side of the customer journey. These structured local listings are discovery signals, not a ranking or an endorsement; verify service scope, current registration and contact details directly.
+
 ### Aquaquest vs drilling contractors
 The comparison suggests two adjacent positioning lanes: (1) technical water-resource investigation/supervision and (2) field contractor delivering drilling and pump/tank works. UNDERFLOW is designed as a specialist contractor with a strong documentation and responsible-water message. That positioning is a design choice, not a market-share claim.
 
@@ -104,7 +107,7 @@ The comparison suggests two adjacent positioning lanes: (1) technical water-reso
 ## 10. Sourced facts vs design assumptions
 
 ### Sourced facts
-- WARMA publishes drilling-company licence and borehole-registration information.
+- WARMA publishes drilling-company licence and borehole-registration information; its 2025 newsletter states only licensed drilling companies may conduct drilling (the list in that newsletter is dated, not a current-register substitute).
 - WARMA's published guidance includes a 30 m domestic site-map radius and non-domestic site-investigation details including boreholes within 250 m.
 - My-WARMA states abstraction thresholds for permit applications; users should confirm applicability with WARMA.
 - FAOLEX identifies the 2018 Groundwater and Boreholes Regulations and describes notice/application/registration requirements.
