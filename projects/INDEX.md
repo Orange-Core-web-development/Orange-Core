@@ -14,6 +14,7 @@ A growing catalogue of independent fictional-business website concepts. Every pr
 | 08 | [PAWLINE Veterinary Studio](./008-pawline-clinic/) | Companion-animal veterinary care | Lusaka clinic concept with care filters, new-patient checklist and enquiry builder |
 | 09 | [DAYFRAME Work Club](./009-dayframe-workclub/) | Flexible workspace and coworking | Lusaka work club with space filters, membership estimator, community calendar and visit-brief builder |
 | 10 | [CUEHOUSE Studio](./010-cuehouse-studio/) | Experiential event production and corporate brand activations | Lusaka event studio concept with filterable service menu, fictional case studies, delivery process and event-brief generator |
+| 11 | [UNDERFLOW Waterworks](./011-underflow-waterworks/) | Borehole drilling, groundwater investigation and water systems | Lusaka waterworks concept with service filters, field process, fictional project studies, regulatory guide and project-brief builder |
 
 New projects are added here. Each includes research, fictional business brief, multi-page static website, implementation notes and QA checklist.
 
