@@ -73,7 +73,7 @@ UNDERFLOW Waterworks is imagined as a specialist groundwater and water-systems c
 
 ## Important real-world limitations
 - A geophysical survey cannot guarantee water, drilling depth or yield.
-- Borehole drilling and abstraction have regulatory requirements in Zambia. Check current WARMA rules and licensing before any real project.
+- Borehole drilling and abstraction have regulatory requirements in Zambia. WARMA stated in a 2025 newsletter that only licensed drilling companies may conduct drilling; verify the current register and applicable rules directly with WARMA before any real project.
 - Do not assume borehole water is potable. Appropriate sampling and laboratory testing are required before drinking.
 - The legal and policy text is a plain-language design example, not legal advice or a binding contract.
 - No real licences, professional registrations, project statistics, certifications, warranties or customer reviews are claimed.
