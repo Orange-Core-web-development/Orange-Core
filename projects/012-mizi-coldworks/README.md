@@ -15,19 +15,14 @@
 - `brief.html` — local project-brief generator, geometric volume estimator, copy and TXT download.
 
 ## Source package
-The complete HTML/CSS/JavaScript/SVG website is in [site-source.tar.br](./site-source.tar.br). It is a Brotli-compressed tar archive. Extract it with:
-```bash
-brotli -d site-source.tar.br -o site-source.tar
-tar -xf site-source.tar
-```
-A standard ZIP with the website and all project documentation is also attached to the Day 12 run deliverables.
+The complete runnable multi-page HTML/CSS/JavaScript/SVG website is attached as `day12-mizi-coldworks.zip` in the Day 12 run deliverables. It contains the six HTML pages, stylesheet, script, five original SVG assets, research report, README, QA checklist and asset/licence notes. The repository folder currently contains the research, fictional brief, QA checklist, asset notes and catalogue entry; the source archive is delivered separately rather than mirrored here.
 
 ## Preview
 No build step or package manager is needed:
 ```bash
 python3 -m http.server 8000
 ```
-Open http://localhost:8000 from the extracted project directory.
+Open http://localhost:8000 after extracting the source archive.
 
 ## GitHub Pages
 All site paths are relative. To publish independently, extract the website contents into the root of a dedicated repository or a `/docs` folder configured as the Pages source. An arbitrary nested project folder is not automatically published by GitHub Pages without a workflow.
