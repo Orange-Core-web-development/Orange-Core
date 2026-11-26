@@ -4,7 +4,7 @@
 **Fictional base:** Light Industrial Area, Lusaka, Zambia.  
 **Tagline:** Protect the good stuff.
 
-> MIZI Coldworks is a fictional portfolio business. Its contacts, location detail, service promises, policies, case studies and testimonial-style quotes are invented. It is not a real contractor.
+> MIZI Coldworks is a fictional portfolio business. Its contacts, proposed location, service promises, policies, case studies and testimonial-style quotes are invented. It is not a real contractor.
 
 ## Website pages
 - `index.html` — brand, systems overview and fictional project studies.
@@ -14,22 +14,26 @@
 - `field-guide.html` — product-first specification notes, food-safety context, monitoring, FAQs and sample policies.
 - `brief.html` — local project-brief generator, geometric volume estimator, copy and TXT download.
 
-The complete multi-page website source is provided in the downloadable run artifact `day12-mizi-coldworks.zip`. The repository currently contains the research, fictional brief, QA checklist, asset notes and portfolio catalogue entry; the individual HTML/CSS/JS/SVG source files have not yet been mirrored into this folder.
+## Source package
+The complete HTML/CSS/JavaScript/SVG website is in [site-source.tar.br](./site-source.tar.br). It is a Brotli-compressed tar archive. Extract it with:
+```bash
+brotli -d site-source.tar.br -o site-source.tar
+tar -xf site-source.tar
+```
+A standard ZIP with the website and all project documentation is also attached to the Day 12 run deliverables.
 
 ## Preview
 No build step or package manager is needed:
 ```bash
 python3 -m http.server 8000
 ```
-Open http://localhost:8000 after extracting the source archive.
+Open http://localhost:8000 from the extracted project directory.
 
 ## GitHub Pages
 All site paths are relative. To publish independently, extract the website contents into the root of a dedicated repository or a `/docs` folder configured as the Pages source. An arbitrary nested project folder is not automatically published by GitHub Pages without a workflow.
 
 ## Interactions
-Responsive navigation; system and sector filters; scroll reveals with reduced-motion fallback; room-volume calculation; validated project-brief generation; copy-to-clipboard; TXT download; native FAQ disclosures.
-
-The form is local-only and sends no data. The volume tool calculates geometric volume only, not cooling load, equipment capacity, cost or energy consumption.
+Responsive navigation; system and sector filters; scroll reveals with reduced-motion fallback; room-volume calculation; validated project-brief generation; copy-to-clipboard; TXT download; native FAQ disclosures. The form is local-only and sends no data. The volume tool calculates geometric volume only, not cooling load, equipment capacity, cost or energy consumption.
 
 ## Fictional brief
 MIZI is imagined as a Lusaka-based commercial refrigeration studio serving Lusaka, Kafue, Chilanga and Chongwe, with Copperbelt work by arrangement. Its proposed catalogue includes cold rooms, freezer rooms, blast chilling/freezing, display/preparation refrigeration, controls, monitoring, commissioning, repairs, maintenance and plant upgrades.
