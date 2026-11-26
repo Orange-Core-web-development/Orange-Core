@@ -14,17 +14,17 @@
 - `field-guide.html` — product-first specification notes, food-safety context, monitoring, FAQs and sample policies.
 - `brief.html` — local project-brief generator, geometric volume estimator, copy and TXT download.
 
-The complete HTML/CSS/JS/SVG website is packaged in [site-source.zip](./site-source.zip). The full deliverable ZIP provided with the run also includes the research report, QA checklist and asset notes.
+The complete multi-page website source is provided in the downloadable run artifact `day12-mizi-coldworks.zip`. The repository currently contains the research, fictional brief, QA checklist, asset notes and portfolio catalogue entry; the individual HTML/CSS/JS/SVG source files have not yet been mirrored into this folder.
 
 ## Preview
 No build step or package manager is needed:
 ```bash
 python3 -m http.server 8000
 ```
-Open http://localhost:8000.
+Open http://localhost:8000 after extracting the source archive.
 
 ## GitHub Pages
-All site paths are relative. To publish independently, extract the contents of `site-source.zip` into the root of a dedicated repository or a `/docs` folder configured as the Pages source. An arbitrary nested project folder is not automatically published by GitHub Pages without a workflow.
+All site paths are relative. To publish independently, extract the website contents into the root of a dedicated repository or a `/docs` folder configured as the Pages source. An arbitrary nested project folder is not automatically published by GitHub Pages without a workflow.
 
 ## Interactions
 Responsive navigation; system and sector filters; scroll reveals with reduced-motion fallback; room-volume calculation; validated project-brief generation; copy-to-clipboard; TXT download; native FAQ disclosures.
