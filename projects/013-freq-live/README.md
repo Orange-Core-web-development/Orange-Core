@@ -15,7 +15,7 @@
 - `brief.html` — local technical-brief builder with validation, copy and TXT download.
 
 ## Complete source package
-The complete six-page HTML/CSS/JavaScript website and five original SVG assets are delivered in `day13-freq-live.zip` with research, README, QA and asset/licence notes. Extract the archive to obtain the runnable `013-freq-live/` folder.
+The complete six-page HTML/CSS/JavaScript website and five original SVG assets are included in the repository archive `source-package.tar.gz` in this directory. The same project is also delivered as `day13-freq-live.zip` in the run output. Extract either archive to obtain the runnable `013-freq-live/` folder.
 
 ## Preview
 No build step or package manager:
@@ -37,4 +37,4 @@ FREQ. is imagined as a technical event-production studio based in Makeni, Lusaka
 **Fictional proof:** Case studies are explicitly labelled as concept studies, not client projects.
 
 ## Limitations
-The website is not a safety plan, technical specification, quote or permit application. Final rigging, temporary structures, electrical distribution, crowd/site design and emergency arrangements require competent people, venue coordination and applicable local approvals. HSE/Event Safety Alliance links are reference guidance, not Zambian legal advice. No real licences, insurance, certifications, inventory, client relationships or performance records are claimed. See `research.md` and the source archive for the complete brief and QA.
+The website is not a safety plan, technical specification, quote or permit application. Final rigging, temporary structures, electrical distribution, crowd/site design and emergency arrangements require competent people, venue coordination and applicable local approvals. HSE/Event Safety Alliance links are reference guidance, not Zambian legal advice. No real licences, insurance, certifications, inventory, client relationships or performance records are claimed. See `research.md`, `QA.md` and `ASSET-LICENSES.md`.
