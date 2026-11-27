@@ -6,7 +6,7 @@
 
 > FREQ. is a fictional portfolio concept. Business details, contacts, location, team, inventory, projects, testimonials and policies are invented. It is not a real production supplier.
 
-## Pages
+## Pages in the complete source package
 - `index.html` — positioning, capabilities, event formats and fictional work.
 - `services.html` — filterable audio, lighting, stage/rigging, video, power and show-operations catalogue.
 - `formats.html` — corporate, conference, festival, brand activation and private-event pathways.
@@ -15,7 +15,7 @@
 - `brief.html` — local technical-brief builder with validation, copy and TXT download.
 
 ## Complete source package
-The complete six-page HTML/CSS/JavaScript website and five original SVG assets are included in the repository archive `source-package.tar.gz` in this directory. The same project is also delivered as `day13-freq-live.zip` in the run output. Extract either archive to obtain the runnable `013-freq-live/` folder.
+The complete six-page HTML/CSS/JavaScript website and five original SVG assets are delivered as `day13-freq-live.zip` in the run output. Extract it to obtain the runnable `013-freq-live/` folder. The full package includes this README, research, QA and asset/licence notes. **The website source archive has not been mirrored into this repository directory yet.**
 
 ## Preview
 No build step or package manager:
