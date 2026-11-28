@@ -64,7 +64,7 @@ These are observations from public company pages, not a complete market census o
 - The U.S. International Trade Administration's Zambia country guide, last published **23 March 2026**, states that imported food products require English-language labels detailing ingredients and expiration dates, and directs readers to the Zambia Compulsory Standards Agency. This is a specific imported-food summary, not a complete rulebook for every Zambian product category.  
   https://www.trade.gov/country-commercial-guides/zambia-labeling-and-marking-requirements
 - The Food Safety Act No. 7 of 2019 includes provisions against misleading or deceptive food labelling and packaging. The exact requirements depend on the product and applicable standards; this concept uses a customer-approved artwork workflow and does not offer legal certification.  
-  https://www.ubutabera.com/public-laws/zambia/the-food-safety-act-2019
+  https://www.parliament.gov.zm/sites/default/files/documents/acts/The%20Food%20Safety%20%20Act%20No.%207%2C%202019.pdf
 
 ## 8. Useful website features
 - Filterable product-format catalogue with clear use cases.
