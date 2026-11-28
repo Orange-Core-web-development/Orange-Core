@@ -17,6 +17,7 @@ A growing catalogue of independent fictional-business website concepts. Every pr
 | 11 | UNDERFLOW Waterworks | Borehole drilling, groundwater investigation and water systems | Lusaka waterworks concept with service filters, field process, fictional project studies, regulatory guide and project-brief builder |
 | 12 | MIZI Coldworks | Commercial refrigeration, cold rooms and cold-chain engineering | Lusaka cold-chain concept with system catalogue, maintenance framework, sector filters, field guide and project-brief builder |
 | 13 | FREQ. Live Systems | Live event technical production and staging | Lusaka production studio with filterable technical catalogue, event-format pathways, fictional case studies, production process and local technical-brief builder |
+| 14 | SOFTSHIFT Linen Co. | Managed commercial laundry & linen logistics | Lusaka linen-services concept with filterable B2B catalogue, sector pathways, operating model, healthcare handling guide, editable weekly volume estimator and local project-brief generator |
 
 New projects are added here. Each includes research, fictional business brief, multi-page static website, implementation notes, asset notes and QA checklist.
 

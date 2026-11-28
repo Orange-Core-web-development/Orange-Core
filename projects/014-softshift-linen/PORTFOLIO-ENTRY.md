@@ -1,0 +1,1 @@
+| 14 | SOFTSHIFT Linen Co. | Managed commercial laundry & linen logistics | Lusaka linen-services concept with filterable B2B catalogue, sector pathways, operating model, healthcare handling guide, editable weekly volume estimator and local project-brief generator |
