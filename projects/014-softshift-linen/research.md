@@ -91,7 +91,7 @@ These are observations from publicly accessible websites, not a complete market 
 
 SOFTSHIFT Linen Co. is a fictional managed commercial laundry and linen-logistics provider based in the Chinika Industrial Area, Lusaka. The assumed service area is Lusaka, Kafue, Chilanga and Chongwe, with regional routes considered only by written arrangement. Fictional contacts: hello@softshift.example and +260 000 000 000.
 
-The site assumes a hybrid offer: off-site processing, linen-pool/rotation planning, workwear and institutional textile care within a defined scope, plus on-premise laundry workflow support. It does not claim a real plant, fleet, certifications, staff, licences, clients, insurance, health-sector accreditation or live availability. Testimonials and case studies are intentionally omitted from the live site rather than fabricated as if real; example scenarios are described as illustrative where used.
+The site assumes a hybrid offer: off-site processing, linen-pool/rotation planning, workwear and institutional textile care within a defined scope, plus on-premise laundry workflow support. It does not claim a real plant, fleet, certifications, staff, licences, clients, insurance, health-sector accreditation or live availability. The homepage includes three explicitly labelled fictional scope scenarios; they are not real client case studies, testimonials or operating results.
 
 Visual assumptions: warm paper, deep green, cobalt, lime and coral; editorial serif headlines; original SVG textile/process diagrams; rounded cards; no stock imagery, external fonts or third-party runtime dependencies.
 
