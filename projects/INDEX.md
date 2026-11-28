@@ -18,6 +18,7 @@ A growing catalogue of independent fictional-business website concepts. Every pr
 | 12 | MIZI Coldworks | Commercial refrigeration, cold rooms and cold-chain engineering | Lusaka cold-chain concept with system catalogue, maintenance framework, sector filters, field guide and project-brief builder |
 | 13 | FREQ. Live Systems | Live event technical production and staging | Lusaka production studio with filterable technical catalogue, event-format pathways, fictional case studies, production process and local technical-brief builder |
 | 14 | SOFTSHIFT Linen Co. | Managed commercial laundry & linen logistics | Lusaka linen-services concept with filterable B2B catalogue, sector pathways, operating model, healthcare handling guide, editable weekly volume estimator and local project-brief generator |
+| 15 | FOLDLINE Packaging Studio | Branded paper packaging, labels and short-run print production | Lusaka packaging studio concept with filterable format catalogue, sector pathways, material guide, fictional design studies, production workflow and local-only project brief builder |
 
 New projects are added here. Each includes research, fictional business brief, multi-page static website, implementation notes, asset notes and QA checklist.
 
